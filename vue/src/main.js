@@ -11,6 +11,19 @@ Vue.use(MintUI)
 
 Vue.config.productionTip = false
 
+router.beforeEach((to, from, next) => {
+  //NProgress.start();
+  if (to.path == '/login') {
+    sessionStorage.removeItem('account');
+  }
+  let user = sessionStorage.getItem('account');
+  if (!user && to.path != '/login') {
+    next({ path: '/login' })
+  } else {
+    next()
+  }
+})
+
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
