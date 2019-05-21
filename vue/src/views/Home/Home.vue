@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <router-view/>
-    <mt-tabbar v-model="selected">
+    <mt-tabbar v-model="selected" fixed>
       <mt-tab-item id="/first">
         首页
       </mt-tab-item>
@@ -34,6 +34,6 @@
   };
 </script>
 
-<style>
+<style lang="stylus" rel="stylesheet/stylus">
 
 </style>
