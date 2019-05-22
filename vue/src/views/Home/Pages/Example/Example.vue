@@ -1,6 +1,6 @@
 <template>
   <div class="example">
-    <mt-search autofocus v-model="searchText" :result="searchResult"></mt-search>
+    <mt-search v-model="searchText" :result="searchResult"></mt-search>
   </div>
 </template>
 
