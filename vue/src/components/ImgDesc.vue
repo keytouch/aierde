@@ -25,6 +25,7 @@ export default {
 .img-desc
   width:100%
   height:100%
+  margin-left 20px
   .left
     float:left
     height 100px
@@ -36,9 +37,10 @@ export default {
     float:left
     margin-left:20px
     .title
-      font-size :24px
+      font-size :20px
       font-weight :700
     .desc
+      margin-top :10px
       font-size:14px
 </style>
 

@@ -16,7 +16,7 @@
       <div class="aged-info" v-for="imgDesc in imgDescList" :key="title">
         <ImgDesc :imgUrl="imgDesc.imgUrl" :title="imgDesc.title" :desc="imgDesc.desc"></ImgDesc>
       </div>
-      
+
     </div>
   </div>
 </template>
@@ -34,28 +34,28 @@ import ImgDesc from 'components/ImgDesc.vue'
         swipeImgList:[swipeImg1,swipeImg2,swipeImg3],
         imgDescList:[
           {
-            imgUrl:"",
+            imgUrl:swipeImg1,
             title:"123",
             desc:"444"
           },
           {
-            imgUrl:"",
-            title:"12333",
+            imgUrl:swipeImg2,
+            title:"12",
             desc:"444445234234234"
           },
           {
-            imgUrl:"",
-            title:"12333",
+            imgUrl:swipeImg3,
+            title:"333",
             desc:"444445234234234"
           },
           {
-            imgUrl:"",
-            title:"12333",
+            imgUrl:swipeImg1,
+            title:"124453",
             desc:"444445234234234"
           },
           {
-            imgUrl:"",
-            title:"12333",
+            imgUrl:swipeImg2,
+            title:"1233333",
             desc:"444445234234234"
           }
         ]
@@ -124,5 +124,7 @@ import ImgDesc from 'components/ImgDesc.vue'
         background-color :#87cefa88
     .aged-info-wrapper
       .aged-info
-        height:150px
+        height:120px
+        border-bottom:1px solid #eee
+        padding:10px
 </style>
