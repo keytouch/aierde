@@ -1,6 +1,9 @@
 <template>
   <div class="home">
-    <router-view/>
+    <div class="page">
+      <router-view/>
+    </div>
+
     <mt-tabbar v-model="selected" fixed>
       <mt-tab-item id="/first">
         <div slot="icon" style="line-height:24px;text-align: center;">

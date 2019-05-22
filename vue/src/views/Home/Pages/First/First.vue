@@ -71,7 +71,7 @@ import ImgDesc from 'components/ImgDesc.vue'
   .first
     width:100%
     margin:0
-    padding:0
+    padding-bottom:50px
     .mint-swipe
       height:200px
       text-align: center;
@@ -123,6 +123,7 @@ import ImgDesc from 'components/ImgDesc.vue'
         color:white
         background-color :#87cefa88
     .aged-info-wrapper
+      width:95%
       .aged-info
         height:120px
         border-bottom:1px solid #eee
