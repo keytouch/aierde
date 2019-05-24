@@ -26,7 +26,8 @@ import ImgDesc from 'components/ImgDesc.vue'
   import swipeImg1 from './swipe1.jpg';
   import swipeImg2 from './swipe2.jpg';
   import swipeImg3 from './swipe3.jpg';
-
+  import img1 from './image7.jpeg'
+  import img2 from './image8.jpg'
   export default {
     name: "First",
     data(){
@@ -34,29 +35,14 @@ import ImgDesc from 'components/ImgDesc.vue'
         swipeImgList:[swipeImg1,swipeImg2,swipeImg3],
         imgDescList:[
           {
-            imgUrl:swipeImg1,
-            title:"123",
-            desc:"444"
+            imgUrl:img1,
+            title:"别让保健品再“坑”老年人 心态好科学养生最靠谱",
+            desc:"中国妇女报"
           },
           {
-            imgUrl:swipeImg2,
-            title:"12",
-            desc:"444445234234234"
-          },
-          {
-            imgUrl:swipeImg3,
-            title:"333",
-            desc:"444445234234234"
-          },
-          {
-            imgUrl:swipeImg1,
-            title:"124453",
-            desc:"444445234234234"
-          },
-          {
-            imgUrl:swipeImg2,
-            title:"1233333",
-            desc:"444445234234234"
+            imgUrl:img2,
+            title:"老人饮食做到十个“宜”",
+            desc:"人民健康网"
           }
         ]
       }
