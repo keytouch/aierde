@@ -1,8 +1,8 @@
 <template>
   <div class="activity">
-    <div class="img-wrapper">
-      <img :src="imgUrl"/>
-    </div>
+    <mt-swipe class="img-swipe">
+      <mt-swipe-item v-for="img in imgList" :key="img" class="swipe-item"><img :src="img" class="swipe-img"></mt-swipe-item>
+    </mt-swipe>
     <div class="name-wrapper">活动名称：{{name}}</div>
     <div class="time-wrapper">活动时间：{{time}}</div>
   </div>
@@ -11,7 +11,7 @@
 <script type="text/ecmascript-6">
   export default {
     props:{
-      imgUrl:String,
+      imgList:Array,
       name:String,
       time:String
     },
@@ -20,26 +20,25 @@
 </script>
 
 <style lang="stylus" rel="stylesheet/stylus">
-  .activity
-    margin:10% auto
+.activity
+  margin:10% auto
+  width: 80%
+  height:240px
+  border-bottom:1px solid #ccc
+  .img-wrapper
+    margin:0 auto
     width: 80%
-    height:240px
-    border-bottom:1px solid #ccc
-    .img-wrapper
-      margin:0 auto
-      width: 80%
-      height:150px
-    .name-wrapper
-      margin:10px
-      width:100%
-      height:20px
-      line-height :20px
-      font-size:18px
-    .time-wrapper
-      margin:10px
-      width:100%
-      height:20px
-      line-height :20px
-      font-size:18px
-
+    height:150px
+  .name-wrapper
+    margin:10px
+    width:100%
+    height:20px
+    line-height :20px
+    font-size:18px
+  .time-wrapper
+    margin:10px
+    width:100%
+    height:20px
+    line-height :20px
+    font-size:18px
 </style>
