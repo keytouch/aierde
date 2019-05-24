@@ -35,7 +35,7 @@
         width:100%
         .swipe-img
           width:100%
-          height:100%
+          margin-top:-30px
   .img-wrapper
     margin:0 auto
     width: 80%
