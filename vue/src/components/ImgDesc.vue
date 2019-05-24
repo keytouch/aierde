@@ -23,21 +23,25 @@ export default {
 </script>
 <style lang="stylus" rel="stylesheet/stylus">
 .img-desc
+  clear:both
   width:100%
   height:100%
   margin-left 20px
   .left
     float:left
     height 100px
-    width:100px
+    width:35%
     .pic
       height:100%
       width:100%
   .right
+    width:55%
+    height:100%
     float:left
     margin-left:20px
+    overflow:hidden
     .title
-      font-size :20px
+      font-size :18px
       font-weight :700
     .desc
       margin-top :10px

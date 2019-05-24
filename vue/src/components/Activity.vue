@@ -25,6 +25,17 @@
   width: 80%
   height:240px
   border-bottom:1px solid #ccc
+  .mint-swipe
+    height:140px
+    text-align: center;
+    margin-bottom: 20px;
+    .mint-swipe-items-wrap
+      width:100%
+      .mint-swipe-item
+        width:100%
+        .swipe-img
+          width:100%
+          height:100%
   .img-wrapper
     margin:0 auto
     width: 80%
