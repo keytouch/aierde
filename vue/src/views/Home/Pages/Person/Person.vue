@@ -1,6 +1,11 @@
 <template>
   <div class="person">
-    This is person.
+    <mt-cell title="标题" is-link></mt-cell>
+    <mt-cell title="标题" is-link></mt-cell>
+    <mt-cell title="标题" is-link></mt-cell>
+    <mt-cell title="标题" is-link></mt-cell>
+    <mt-cell title="标题" is-link></mt-cell>
+    <mt-cell title="标题" is-link></mt-cell>
   </div>
 </template>
 

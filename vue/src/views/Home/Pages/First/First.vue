@@ -13,7 +13,7 @@
     </div>
     <mt-cell title="养老资讯" is-link :to="{path:'/example' }"></mt-cell>
     <div class="aged-info-wrapper">
-      <div class="aged-info" v-for="imgDesc in imgDescList" :key="title">
+      <div class="aged-info" v-for="imgDesc in imgDescList" :key="imgDesc.title">
         <ImgDesc :imgUrl="imgDesc.imgUrl" :title="imgDesc.title" :desc="imgDesc.desc"></ImgDesc>
       </div>
 
