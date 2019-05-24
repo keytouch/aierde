@@ -1,5 +1,8 @@
 <template>
   <div class="community">
+    <div class="community-service">
+      <mt-cell title="社区服务" is-link value="更多"></mt-cell>
+    </div>
     <div class="activity-wrapper">
       <div class="activity-item" v-for="activity in activityList">
         <Activity :imgUrl="activity.imgUrl" :name="activity.name" :time="activity.time"></Activity>
@@ -40,5 +43,8 @@
 </script>
 
 <style lang="stylus" rel="stylesheet/stylus">
-
+  .community
+    padding-bottom:50px
+    .community-service
+      border-bottom :1px solid #ccc
 </style>

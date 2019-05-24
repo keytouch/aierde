@@ -1,6 +1,9 @@
 <template>
   <div class="example">
-    <!--<mt-search v-model="searchText" :result="searchResult"></mt-search>-->
+    <div class="search">
+      <mt-search v-model="searchText" :result="searchResult"></mt-search>
+    </div>
+
     <div class="example-wrapper">
       <div class="example-item" v-for="imgDesc in imgDescList" :key="imgDesc.title">
         <ImgDesc :imgUrl="imgDesc.imgUrl" :title="imgDesc.title" :desc="imgDesc.desc"></ImgDesc>
@@ -78,6 +81,8 @@
 
 <style lang="stylus" rel="stylesheet/stylus">
   .example
+    .search
+      height:60px
     .example-wrapper
       width: 95%
       .example-item

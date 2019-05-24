@@ -20,5 +20,26 @@
 </script>
 
 <style lang="stylus" rel="stylesheet/stylus">
+  .activity
+    margin:10% auto
+    width: 80%
+    height:240px
+    border-bottom:1px solid #ccc
+    .img-wrapper
+      margin:0 auto
+      width: 80%
+      height:150px
+    .name-wrapper
+      margin:10px
+      width:100%
+      height:20px
+      line-height :20px
+      font-size:18px
+    .time-wrapper
+      margin:10px
+      width:100%
+      height:20px
+      line-height :20px
+      font-size:18px
 
 </style>
