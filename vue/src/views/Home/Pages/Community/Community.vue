@@ -2,7 +2,7 @@
   <div class="community">
     <div class="activity-wrapper">
       <div class="activity-item" v-for="activity in activityList">
-        <Activity :imgUrl="activity.imgUrl" :name="activity.name" :time="activity.time"></Activity>
+        <Activity :imgList="activity.imgList" :name="activity.name" :time="activity.time"></Activity>
       </div>
     </div>
   </div>
@@ -10,6 +10,14 @@
 
 <script type="text/ecmascript-6">
   import Activity from 'components/Activity.vue'
+  import image1 from './image1.jpeg'
+  import image2 from './image2.jpeg'
+  import image3 from './image3.jpeg'
+  import image4 from './image4.jpeg'
+  import image5 from './image5.jpeg'
+  import image6 from './image6.jpeg'
+  import image7 from './image7.jpeg'
+  import image8 from './image8.jpeg'
   export default {
     name: "Community",
     components:{
@@ -19,19 +27,24 @@
       return{
         activityList:[
           {
-            imgUrl:"img1",
-            name:"name1",
-            time:"time1"
+            imgList:[image1, image2],
+            name:"志愿活动",
+            time:"2019年5月19日 8：00-11：30及14：00-17：30"
           },
           {
-            imgUrl:"img2",
-            name:"name2",
-            time:"time2"
+            imgList:[image3, image4],
+            name:"科普教育",
+            time:"2019年5月18日 8：30-10：30"
           },
           {
-            imgUrl:"img3",
-            name:"name3",
-            time:"time3"
+            imgList:[image5, image6],
+            name:"定期检查",
+            time:"2019年5月25日 8：00-11：30及14：00-17：30"
+          },
+          {
+            imgList:[image7, image8],
+            name:"休闲娱乐",
+            time:"2019年5月26日 8：30-10：30"
           }
         ]
       }
